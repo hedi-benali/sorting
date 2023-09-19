@@ -1,0 +1,23 @@
+ALGO sort_cards
+
+var 
+
+t: array_of_int(]
+res:array_of_int[]
+i,j:int
+
+begin
+
+for i from  to tlength - do
+j=res .length-1 while (j>= 0) and (res[j]> t[i])
+res[j]:= res[j-1]
+
+j=j-1
+
+end while 
+
+res[j+1] = t[i]
+
+end for
+
+ end
